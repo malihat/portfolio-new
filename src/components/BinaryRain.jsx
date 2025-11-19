@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Zero from '../assets/000.png';
-import One from '../assets/111.png';
+import One from '../assets/000.png';
 
 const BinaryRain = () => {
   const canvasRef = useRef(null);
@@ -19,8 +19,8 @@ const BinaryRain = () => {
 
     const zeroImage = new Image();
     const oneImage = new Image();
-    zeroImage.src = {Zero};
-    oneImage.src = {One};
+    zeroImage.src = Zero;
+    oneImage.src = One;
 
     const symbols = [];
     for (let i = 0; i < numSymbols; i++) {
