@@ -9,7 +9,7 @@ const experiences = [
         id: 1,
         role: "Web Designer",
         company: "Tzumi Electronics",
-        duration: "March 2023 - Present",
+        duration: "March 2023 - October 2025",
         description: ["Developing responsive websites using WordPress", "Updating ecommerce sites in WordPress by adding new products",
                 "Utilizing design tools like Figma and Photopea for image editing and design tasks", "Implementing JavaScript for enhancing existing WordPress widgets",
                 "Creating and styling blogs using HTML and Bootstrap", "Managing email marketing campaigns using Klaviyo, including template modification"
@@ -72,9 +72,9 @@ const WorkExperience = () => {
 {/* <<<<<<< HEAD
         <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#00B6D2] rounded-full h-10 w-10 items-center justify-center shadow-md">
 ======= */}
-        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#AB477C] rounded-full h-10 w-10 items-center justify-center shadow-md">
+        <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-20 bg-dark border-4 border-[#C353A7] rounded-full h-10 w-10 items-center justify-center shadow-md">
 {/* >>>>>>> b6dd0e9509da051e32110c63ea5e617efd0421c5 */}
-          <ImportantDevicesIcon className="h-6 w-6 text-[#AB477C]" />
+          <ImportantDevicesIcon className="h-6 w-6 text-[#C353A7]" />
         </div>
 
         {/* Card */}

@@ -1,6 +1,6 @@
 import BinaryRain from "./components/BinaryRain";
 import Girl from "./assets/firstanimation-ezgif.com-crop.gif";
-import "./App.css";
+import "./index.css";
 import WorkExperience from "./components/WorkExperience";
 import Projects from "./components/Projects";
 import About from "./components/About";
@@ -9,6 +9,7 @@ import "./index.css";
 import Skill from './assets/Skills Icon.png';
 import Work from './assets/Work Icon.png';
 import Project from './assets/Projects Icon.png';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,13 +19,13 @@ function App() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full overflow-x-hidden">
           {/* Responsive flex container */}
-          <div className="flex flex-col lg:flex-row min-h-screen items-center justify-center gap-6 lg:gap-12 pt-16 lg:pt-0">
+          <div className="flex flex-col lg:flex-row flex-grow items-center justify-center gap-6 lg:gap-12 pt-12 lg:pt-0">
             
             {/* Text Section */}
             <div className="flex-1 flex items-center text-center lg:text-left px-4">
               <div className="max-w-lg">
                 <h1 className="text-white text-5xl sm:text-5xl md:text-6xl font-bold">
-                  Hey, I'm <span className="text-5xl sm:text-5xl md:text-6xl font-bold text-[#F58499]">{`<Maliha Tanweer />`}</span>
+                  Hey, I'm <span className="text-5xl sm:text-5xl md:text-6xl font-bold text-[#f7b449]">{`<Maliha Tanweer />`}</span>
                 </h1>
                 <p className="text-white text-base xs:text-lg sm:text-xl mt-4 sm:mt-6 opacity-90">
                   I'm a self-taught web developer who likes to develop web apps.
@@ -37,24 +38,71 @@ function App() {
               <img 
                 src={Girl} 
                 alt="Animated GIF" 
-                className="w-full max-w-[95%] xs:max-w-[360px] sm:max-w-[480px] lg:max-w-[500px] h-auto object-contain"
+                className="w-full max-w-[70%] xs:max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] h-auto object-contain"
               />
             </div>
           </div>
         </div>
 
         {/* Bottom-aligned Icons */}
-        <div className="absolute flex bottom-4 left-1/2 transform -translate-x-1/2 z-20 gap-2 sm:gap-4">
-          <img className="icons hover:scale-110 transition-transform" src={Skill} alt="Skills Icon" />
-            {/* <!-- Tooltip --> */}
-  <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 
-               hidden group-hover:block 
-               bg-gray-900 text-white text-xs rounded py-1 px-2 whitespace-nowrap">
-    This is a tooltip
-  </span>
-          <img className="icons hover:scale-110 transition-transform" src={Project} alt="Project Icon" />
-          <img className="icons hover:scale-110 transition-transform" src={Work} alt="Work Icon" />
-        </div>
+        {/* <div className="absolute flex bottom-6 left-1/2 transform -translate-x-1/2 z-20 gap-3 sm:gap-4">
+          <img className="icons hover:scale-110 transition-transform cursor-pointer" src={Skill} alt="Skills Icon" />
+          <img className="icons hover:scale-110 transition-transform cursor-pointer" src={Project} alt="Project Icon" />
+          <img className="icons hover:scale-110 transition-transform cursor-pointer" src={Work} alt="Work Icon" />
+        </div> */}
+        <div className="absolute flex bottom-6 left-1/2 transform -translate-x-1/2 z-20 gap-3 sm:gap-4">
+  {/* Skills Icon */}
+  <div className="relative group inline-block">
+    <img
+      className="icons hover:scale-110 transition-transform cursor-pointer"
+      src={Skill}
+      alt="Skills Icon"
+    />
+    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
+                    opacity-0 group-hover:opacity-100 
+                    transition-opacity duration-300 
+                    bg-gray-900 text-white text-xs 
+                    rounded py-1 px-2 whitespace-nowrap 
+                    pointer-events-none z-10">
+      Skills
+    </div>
+  </div>
+
+  {/* Projects Icon */}
+  <div className="relative group inline-block">
+    <img
+      className="icons hover:scale-110 transition-transform cursor-pointer"
+      src={Project}
+      alt="Projects Icon"
+    />
+    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
+                    opacity-0 group-hover:opacity-100 
+                    transition-opacity duration-300 
+                    bg-gray-900 text-white text-xs 
+                    rounded py-1 px-2 whitespace-nowrap 
+                    pointer-events-none z-10">
+      Projects
+    </div>
+  </div>
+
+  {/* Work Icon */}
+  <div className="relative group inline-block">
+    <img
+      className="icons hover:scale-110 transition-transform cursor-pointer"
+      src={Work}
+      alt="Work Icon"
+    />
+    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
+                    opacity-0 group-hover:opacity-100 
+                    transition-opacity duration-300 
+                    bg-gray-900 text-white text-xs 
+                    rounded py-1 px-2 whitespace-nowrap 
+                    pointer-events-none z-10">
+      Work
+    </div>
+  </div>
+</div>
+
       </header>
 
       <div className="relative z-20 overflow-x-hidden" id="work-projects">
@@ -62,6 +110,7 @@ function App() {
         <Skills />
         <WorkExperience />
         <Projects />
+        <Footer />
       </div>
     </>
   );

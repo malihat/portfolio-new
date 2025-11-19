@@ -72,6 +72,11 @@ button:focus-visible {
 @tailwind utilities;
 
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Raleway', sans-serif;
@@ -89,8 +94,16 @@ h1 span {
   font-weight: 500;
 }
 
+.main {
+  padding-top: 60px;
+}
+
 .icons {
-  width: 3.1rem;
+  width: 3.5rem;
+}
+
+#skill-icon {
+  height: 70px;
 }
 
 
